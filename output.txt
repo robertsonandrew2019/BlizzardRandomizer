@@ -1,10 +1,7 @@
-/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=57660:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/andrewrobertson/IdeaProjects/BlizzardRandomizer/out/production/BlizzardRandomizer Main
-Name: Andrew
-Class: wizard
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=54973:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/andrewrobertson/IdeaProjects/BlizzardRandomizer/out/production/BlizzardRandomizer Main
 
-Attributes
-Strength: 15
-Dexterity: 15
-Intelligence: 20
+Strength: 16
+Dexterity: 18
+Intelligence: 16
 
 Process finished with exit code 0
