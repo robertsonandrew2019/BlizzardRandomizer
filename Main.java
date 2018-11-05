@@ -2,34 +2,30 @@ import java.util.Random;
 import java.util.Scanner;
 public class Main {
 
+    public static Random rand = new Random();
+    public static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
-	// write your code here
 
-        Random rand = new Random();
-        Scanner s = new Scanner(System.in);
-
-        System.out.print("Name: ");
-        String name = s.next();
+        /*System.out.print("Name: ");
+        String name = sc.next();
         System.out.print("Class: ");
-        String charClass = s.next();
+        String charClass = sc.next(); */
+        randomization();
+    }
+    public static void randomization(){
+        double percent1 = rand.nextDouble(); double percent2 = rand.nextDouble();
+        double max = Math.max(percent1, percent2); double min = Math.min(percent1, percent2);
 
-        int utility = 17;
-        int strengthRand = rand.nextInt(17);
-        utility = 17 - strengthRand;
-        int dexterityRand = rand.nextInt(utility);
-        utility = utility - dexterityRand;
-        int intelligenceRand = utility;
+        int strength = (int)Math.round(10 + (min * 20));
+        int dexterity = (int)Math.round(10 + ((max - min) * 20));
+        int intelligence = (int)Math.round(10 + ((1 - max) * 20));
 
-        int strength = 11 + strengthRand;
-        int dexterity = 11 + dexterityRand;
-        int intelligence = 11 + intelligenceRand;
-
-        System.out.println();
-        System.out.println("Attributes");
-        System.out.println("Strength: " + strength);
-        System.out.println("Dexterity: " + dexterity);
-        System.out.println("Intelligence: " + intelligence);
-
-
+        if(strength + dexterity + intelligence == 50){
+            System.out.printf("\nStrength: %d\nDexterity: %d\nIntelligence: %d\n", strength, dexterity, intelligence);
+        }
+        else{
+            randomization();
+        }
     }
 }
